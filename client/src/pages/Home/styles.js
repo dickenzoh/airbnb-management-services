@@ -1,4 +1,4 @@
-import { makeStyles } from "@material-ui/core";
+import { makeStyles } from "@mui/styles";
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -19,11 +19,11 @@ const useStyles = makeStyles((theme) => ({
   },
   bannerTitle: {
     fontWeight: "bold",
-    marginBottom: theme.spacing(2),
+    // marginBottom: theme.spacing(2),
     color: "#000",
   },
   bannerSubtitle: {
-    marginBottom: theme.spacing(4),
+    //marginBottom: theme.spacing(4),
     color: "#000",
   },
 }));

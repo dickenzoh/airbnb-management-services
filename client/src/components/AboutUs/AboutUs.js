@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, List, ListItem, Grid } from "@mui/material";
+import { Typography, List, ListItem, Grid, Box } from "@mui/material";
 
 const AboutUs = () => {
   return (
@@ -86,12 +86,12 @@ const AboutUs = () => {
       <Grid container columnSpacing={2}>
         <Grid Item xs={6}>
           <Typography variant="h3">Meet Our Team</Typography>
-          <Typography paragraph>
+          <Box>
             Our team consists of experienced property managers, marketing
             specialists, housekeeping professionals, and guest experience
             coordinators. Each team member is committed to delivering the
             highest level of service, expertise, and dedication to our clients.
-          </Typography>
+          </Box>
         </Grid>
 
         <Grid Item xs={6}>
