@@ -1,27 +1,18 @@
 import { Grid } from "@mui/material";
 import Banner from "../../components/Banner/Banner";
-import About from "../../components/About/About";
+import AboutUs from "../../components/AboutUs/AboutUs";
 import Testimonials from "../../components/Testimonials/Testimonials";
 import Services from "../../components/Services/Services";
 import Properties from "../../components/Properties/Properties";
 import Contact from "../../components/Contact/Contact";
+import useStyles from "./styles";
 
 const Home = () => {
+  const classes = useStyles();
   return (
-    <Grid container spacing={2}>
-      <Grid
-        item
-        xs={12}
-        sx={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          backgroundColor: "lightblue",
-          height: "500px",
-        }}
-      >
-        <div id="section1" style={{ background: "lightpink" }}>
-          Home Section
+    <Grid container fixed className={classes.container}>
+      <Grid item xs={12} className={classes.itemBanner}>
+        <div id="section1">
           <Banner />
         </div>
       </Grid>
@@ -33,12 +24,10 @@ const Home = () => {
           justifyContent: "center",
           alignItems: "center",
           backgroundColor: "lightgray",
-          height: "500px",
         }}
       >
-        <div id="section2" style={{ background: "lightpink" }}>
-          About Us
-          <About />
+        <div id="section2">
+          <AboutUs />
         </div>
       </Grid>
       <Grid
@@ -49,12 +38,10 @@ const Home = () => {
           justifyContent: "center",
           alignItems: "center",
           backgroundColor: "lightblue",
-          height: "500px",
         }}
       >
         <div id="section3" style={{ background: "lightpink" }}>
-          Section 3
-          <Services />
+          Services
         </div>
       </Grid>
       <Grid
