@@ -11,7 +11,6 @@ const ContactUs = () => {
 
   return (
     <div className={classes.root}>
-      <Typography variant="h4">Contact Us</Typography>
       <form className={classes.form} onSubmit={handleSubmit}>
         <TextField label="Name" variant="outlined" required />
         <TextField label="Email" variant="outlined" type="email" required />

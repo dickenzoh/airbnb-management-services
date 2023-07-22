@@ -4,13 +4,12 @@ import { Typography, List, ListItem, Grid, Box } from "@mui/material";
 const AboutUs = () => {
   return (
     <div style={{ textAlign: "center", padding: "20px" }}>
-      <Typography variant="h2">About Us</Typography>
       <Typography paragraph>
         Welcome to [Your Company Name], Your Partner in Airbnb House Management!
       </Typography>
       <Grid container columnSpacing={2}>
         <Grid Item xs={6}>
-          <Typography variant="h3">Who We Are</Typography>
+          <Typography variant="h4">Who We Are</Typography>
           <Typography paragraph>
             At [Your Company Name], we are a team of dedicated professionals
             passionate about property management and the Airbnb experience. With
@@ -21,7 +20,7 @@ const AboutUs = () => {
           </Typography>
         </Grid>
         <Grid Item xs={6}>
-          <Typography variant="h3">Our Vision</Typography>
+          <Typography variant="h4">Our Vision</Typography>
           <Typography paragraph>
             We envision a world where property management is hassle-free and
             enjoyable for property owners, while guests have access to
@@ -33,7 +32,7 @@ const AboutUs = () => {
       </Grid>
       <Grid container columnSpacing={2}>
         <Grid Item xs={6}>
-          <Typography variant="h3">Our Services</Typography>
+          <Typography variant="h4">Our Services</Typography>
           <List>
             <ListItem>
               Listing Optimization: We optimize your property listings to
@@ -62,7 +61,7 @@ const AboutUs = () => {
           </List>
         </Grid>
         <Grid Item xs={6}>
-          <Typography variant="h3">Our Values</Typography>
+          <Typography variant="h4">Our Values</Typography>
           <List>
             <ListItem>
               Professionalism: We uphold the highest standards of
@@ -85,7 +84,7 @@ const AboutUs = () => {
       </Grid>
       <Grid container columnSpacing={2}>
         <Grid Item xs={6}>
-          <Typography variant="h3">Meet Our Team</Typography>
+          <Typography variant="h4">Meet Our Team</Typography>
           <Box>
             Our team consists of experienced property managers, marketing
             specialists, housekeeping professionals, and guest experience
@@ -95,7 +94,7 @@ const AboutUs = () => {
         </Grid>
 
         <Grid Item xs={6}>
-          <Typography variant="h3">Our Commitment</Typography>
+          <Typography variant="h4">Our Commitment</Typography>
           <Typography paragraph>
             At [Your Company Name], we are dedicated to providing exceptional
             service and support to our clients. We treat each property as if it
@@ -105,7 +104,7 @@ const AboutUs = () => {
           </Typography>
         </Grid>
       </Grid>
-      <Typography variant="h3">Contact Us</Typography>
+      <Typography variant="h4">Contact Us</Typography>
       <Typography paragraph>
         We look forward to partnering with you to elevate your Airbnb property
         management experience. Contact us today to learn more about our services

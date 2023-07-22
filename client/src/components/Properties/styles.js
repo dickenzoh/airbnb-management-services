@@ -3,7 +3,6 @@ import { makeStyles } from "@material-ui/core";
 const useStyles = makeStyles((theme) => ({
   root: {
     textAlign: "center",
-    paddingTop: "2rem",
     paddingBottom: "2rem",
   },
   card: {

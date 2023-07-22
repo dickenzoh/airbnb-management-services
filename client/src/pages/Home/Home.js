@@ -1,12 +1,11 @@
-import { Grid } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
 import Banner from "../../components/Banner/Banner";
 import AboutUs from "../../components/AboutUs/AboutUs";
 import Services from "../../components/Services/Services";
 import Properties from "../../components/Properties/Properties";
 import ContactUs from "../../components/ContactUs/ContactUs";
 import useStyles from "./styles";
-import Testimonial from "../../components/Testimonials/Testimonials";
-import Test from "../../components/Testimonials/Test";
+import Testimonial from "../../components/Testimonials/Testimonial";
 
 const Home = () => {
   const classes = useStyles();
@@ -30,7 +29,7 @@ const Home = () => {
   ];
 
   return (
-    <Grid container fixed className={classes.container}>
+    <Grid container fixed>
       <Grid item xs={12} className={classes.itemBanner}>
         <div id="section1">
           <Banner />
@@ -43,11 +42,17 @@ const Home = () => {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
+          backgroundColor: "lightgray",
         }}
       >
-        <div id="section2">
-          <AboutUs />
-        </div>
+        <Box sx={{ display: "flex", flexDirection: "column" }}>
+          <Box sx={{ display: "flex", justifyContent: "center", mb: 5, mt: 5 }}>
+            <Typography variant="h4">About Us</Typography>
+          </Box>
+          <div id="section2">
+            <AboutUs />
+          </div>
+        </Box>
       </Grid>
       <Grid
         item
@@ -56,11 +61,17 @@ const Home = () => {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
+          backgroundColor: "lightblue",
         }}
       >
-        <div id="section3">
-          <Services />
-        </div>
+        <Box sx={{ display: "flex", flexDirection: "column" }}>
+          <Box sx={{ display: "flex", justifyContent: "center", mb: 5, mt: 5 }}>
+            <Typography variant="h4">Services</Typography>
+          </Box>
+          <div id="section3">
+            <Services />
+          </div>
+        </Box>
       </Grid>
       <Grid
         item
@@ -70,12 +81,16 @@ const Home = () => {
           justifyContent: "center",
           alignItems: "center",
           backgroundColor: "lightgreen",
-          height: "500px",
         }}
       >
-        <div id="section4">
-          <Properties />
-        </div>
+        <Box sx={{ display: "flex", flexDirection: "column" }}>
+          <Box sx={{ display: "flex", justifyContent: "center", mb: 5, mt: 5 }}>
+            <Typography variant="h4">Properties</Typography>
+          </Box>
+          <div id="section4">
+            <Properties />
+          </div>
+        </Box>
       </Grid>
       <Grid
         item
@@ -84,20 +99,17 @@ const Home = () => {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
+          height: "100%",
         }}
       >
-        <div id="section5">
-          {/* {testimonialData.map((testimonial) => (
-            <Testimonial
-              key={testimonial.id}
-              avatarSrc={testimonial.avatarSrc}
-              name={testimonial.name}
-              quote={testimonial.quote}
-            />
-          ))} */}
-          Testimonial
-          <Test />
-        </div>
+        <Box sx={{ display: "flex", flexDirection: "column" }}>
+          <Box sx={{ display: "flex", justifyContent: "center", mb: 5, mt: 5 }}>
+            <Typography variant="h4">Testimonials</Typography>
+          </Box>
+          <div id="section5">
+            <Testimonial />
+          </div>
+        </Box>
       </Grid>
       <Grid
         item
@@ -109,9 +121,14 @@ const Home = () => {
           height: "500px",
         }}
       >
-        <div id="section6">
-          <ContactUs />
-        </div>
+        <Box sx={{ display: "flex", flexDirection: "column" }}>
+          <Box sx={{ display: "flex", justifyContent: "center", mb: 5, mt: 5 }}>
+            <Typography variant="h4">Contact Us</Typography>
+          </Box>
+          <div id="section6">
+            <ContactUs />
+          </div>
+        </Box>
       </Grid>
     </Grid>
   );

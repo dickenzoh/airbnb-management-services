@@ -14,6 +14,7 @@ const App = () => {
           <Route path="/" exact element={<Home />} />
         </Routes>
       </Container>
+      <Footer />
     </BrowserRouter>
   );
 };
