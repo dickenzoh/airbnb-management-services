@@ -6,6 +6,7 @@ import Properties from "../../components/Properties/Properties";
 import ContactUs from "../../components/ContactUs/ContactUs";
 import useStyles from "./styles";
 import Testimonial from "../../components/Testimonials/Testimonial";
+import AirbnbConsultingServices from "../../components/Services/Services";
 
 const Home = () => {
   const classes = useStyles();
@@ -69,7 +70,7 @@ const Home = () => {
             <Typography variant="h4">Services</Typography>
           </Box>
           <div id="section3">
-            <Services />
+            <AirbnbConsultingServices />
           </div>
         </Box>
       </Grid>

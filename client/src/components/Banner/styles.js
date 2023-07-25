@@ -24,6 +24,9 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: theme.spacing(4),
     color: "#000",
   },
+  bannerBtn: {
+    marginTop: "100px",
+  },
 }));
 
 export default useStyles;

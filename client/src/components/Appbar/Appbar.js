@@ -13,6 +13,7 @@ import NotificationsIcon from "@mui/icons-material/Notifications";
 import MailIcon from "@mui/icons-material/Mail";
 import { Badge, Toolbar, Tooltip, Typography } from "@mui/material";
 import { Link as ScrollLink } from "react-scroll";
+import Logo from "../../images/luxelogoy.png";
 
 const pages = [
   { section: "section1", name: "Home" },
@@ -48,7 +49,9 @@ const ResponsiveAppBar = () => {
     <AppBar position="sticky" sx={{ backgroundColor: "#000" }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
+          <Box sx={{ mr: 2 }}>
+            <img src={Logo} alt="Airbnb Setup and Staging" />
+          </Box>
           <Typography
             variant="h6"
             noWrap
@@ -60,10 +63,11 @@ const ResponsiveAppBar = () => {
               fontFamily: "monospace",
               fontWeight: 700,
               letterSpacing: ".3rem",
-              textDecoration: "none",
+              textDecoration: "white",
+              color: "white",
             }}
           >
-            Airbnb
+            Luxe Global Management
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -119,7 +123,7 @@ const ResponsiveAppBar = () => {
               textDecoration: "none",
             }}
           >
-            Airbnb
+            Luxe global airbnb
           </Typography>
           <Box
             sx={{

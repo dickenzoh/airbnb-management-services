@@ -5,13 +5,14 @@ const AboutUs = () => {
   return (
     <div style={{ textAlign: "center", padding: "20px" }}>
       <Typography paragraph>
-        Welcome to [Your Company Name], Your Partner in Airbnb House Management!
+        Welcome to Luxe Global Management, Your Partner in Airbnb House
+        Management!
       </Typography>
       <Grid container columnSpacing={2}>
         <Grid Item xs={6}>
           <Typography variant="h4">Who We Are</Typography>
           <Typography paragraph>
-            At [Your Company Name], we are a team of dedicated professionals
+            At Luxe Global Management, we are a team of dedicated professionals
             passionate about property management and the Airbnb experience. With
             years of experience in the industry, we have honed our skills in
             providing top-notch services to property owners and guests alike.
@@ -96,7 +97,7 @@ const AboutUs = () => {
         <Grid Item xs={6}>
           <Typography variant="h4">Our Commitment</Typography>
           <Typography paragraph>
-            At [Your Company Name], we are dedicated to providing exceptional
+            At Luxe Global Management, we are dedicated to providing exceptional
             service and support to our clients. We treat each property as if it
             were our own, ensuring it is well cared for and generates maximum
             returns. With our expertise and personalized approach, you can rest

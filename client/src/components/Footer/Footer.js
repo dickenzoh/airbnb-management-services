@@ -12,7 +12,6 @@ import { makeStyles } from "@material-ui/core";
 const useStyles = makeStyles((theme) => ({
   footer: {
     marginTop: "auto",
-    backgroundColor: theme.palette.primary.main,
     color: theme.palette.common.white,
     padding: theme.spacing(2),
   },
@@ -29,16 +28,20 @@ const Footer = () => {
   const classes = useStyles();
 
   return (
-    <AppBar position="static" className={classes.footer}>
+    <AppBar
+      position="static"
+      sx={{ backgroundColor: "#000" }}
+      className={classes.footer}
+    >
       <Container maxWidth="lg">
         <Grid container spacing={2}>
           <Grid item xs={12} sm={6} md={4}>
             <Typography variant="h6" gutterBottom>
-              Company Name
+              Luxe Global Management
             </Typography>
             <Typography variant="body1">
-              A short description about your company goes here. You can provide
-              some information about your mission, vision, and values.
+              Welcome to Luxe Global Management, Your Partner in Airbnb House
+              Management!
             </Typography>
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
@@ -70,7 +73,7 @@ const Footer = () => {
               <br />
               Email: contact@example.com
               <br />
-              Phone: +1 (123) 456-7890
+              Phone: 0718627917
             </Typography>
           </Grid>
         </Grid>

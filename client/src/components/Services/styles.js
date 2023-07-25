@@ -1,30 +1,30 @@
 import { makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
-  root: {
-    textAlign: "center",
-    fontFamily: "Arial, sans-serif",
+  sectionContainer: {
+    padding: theme.spacing(3),
+    backgroundColor: "#f9f9f9",
   },
-  header: {
-    backgroundColor: "#333",
-    color: "#fff",
-    padding: "1rem 0",
+  serviceItem: {
+    marginBottom: theme.spacing(2),
   },
-  servicesGrid: {
-    display: "grid",
-    gridTemplateColumns: "repeat(2, 1fr)",
-    gridGap: "2rem",
-    padding: "2rem",
+  title: {
+    fontSize: "1.5rem",
+    fontWeight: "bold",
+    marginBottom: theme.spacing(1),
   },
-  serviceSection: {
-    border: "1px solid #ccc",
-    padding: "1.5rem",
-    borderRadius: "5px",
+  price: {
+    fontSize: "1.2rem",
+    fontWeight: "bold",
+    color: theme.palette.primary.main,
   },
-  footer: {
-    backgroundColor: "#f2f2f2",
-    textAlign: "center",
-    padding: "1rem",
+  description: {
+    marginBottom: theme.spacing(2),
+  },
+  contactInfo: {
+    marginTop: theme.spacing(3),
+    fontSize: "1.1rem",
+    fontWeight: "bold",
   },
 }));
 

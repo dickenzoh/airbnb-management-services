@@ -1,44 +1,117 @@
 import React from "react";
-import { Typography } from "@mui/material";
-import useStyles from "./styles.js";
+import { makeStyles } from "@material-ui/core";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import Typography from "@mui/material/Typography";
 
-const Services = () => {
+const useStyles = makeStyles((theme) => ({
+  sectionContainer: {
+    display: "grid",
+    gridGap: theme.spacing(2),
+    backgroundColor: "#f9f9f9",
+    padding: theme.spacing(3),
+    [theme.breakpoints.up("sm")]: {
+      gridTemplateColumns: "repeat(2, 1fr)",
+    },
+  },
+  card: {
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-between",
+    minHeight: 200,
+    borderRadius: theme.spacing(2),
+    boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
+    transition: "box-shadow 0.3s ease",
+    "&:hover": {
+      boxShadow: "0px 6px 12px rgba(0, 0, 0, 0.15)",
+    },
+  },
+  title: {
+    fontSize: "1.5rem",
+    fontWeight: "bold",
+    marginBottom: theme.spacing(1),
+    color: theme.palette.primary.main,
+  },
+  price: {
+    fontSize: "1.2rem",
+    fontWeight: "bold",
+    color: theme.palette.secondary.main,
+  },
+  description: {
+    marginBottom: theme.spacing(2),
+  },
+  contactInfo: {
+    fontSize: "1.1rem",
+    fontWeight: "bold",
+    marginTop: "auto",
+    color: theme.palette.primary.dark,
+  },
+}));
+
+const AirbnbConsultingServices = () => {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
-      <header className={classes.header}>
-        <Typography variant="h1">Airbnb Management Services</Typography>
-      </header>
-      <main className={classes.servicesGrid}>
-        <section className={classes.serviceSection}>
-          <Typography variant="h4" className={classes.serviceTitle}>
-            Listing Optimization
+    <div className={classes.sectionContainer}>
+      <Card className={classes.card}>
+        <CardContent>
+          <Typography className={classes.title}>
+            Airbnb Setup and Staging
           </Typography>
-          <Typography paragraph>
-            We optimize your property listings to attract more guests and
-            achieve higher occupancy rates.
+          <Typography className={classes.price}>Price: Ksh. 10,000</Typography>
+          <Typography className={classes.description}>
+            Get your Airbnb property off to a great start with our comprehensive
+            setup, staging, decorating, and design services. We'll ensure your
+            space is appealing and attractive to potential guests, increasing
+            your booking rates and revenue.
           </Typography>
-        </section>
-        <section className={classes.serviceSection}>
-          <Typography variant="h4" className={classes.serviceTitle}>
-            Dynamic Pricing
+        </CardContent>
+      </Card>
+
+      <Card className={classes.card}>
+        <CardContent>
+          <Typography className={classes.title}>
+            Airbnb Business Consultation
           </Typography>
-          <Typography paragraph>
-            Our experts use data-driven pricing strategies to ensure competitive
-            rates and maximize your rental income.
+          <Typography className={classes.price}>Price: Ksh. 5,000</Typography>
+          <Typography className={classes.description}>
+            If you lack experience as an Airbnb host but are eager to succeed,
+            our Airbnb business consultation is tailored for you. Avoid costly
+            beginner mistakes and gain valuable insights from experienced
+            consultants, setting your Airbnb venture up for long-term success.
           </Typography>
-        </section>
-        {/* Add the other service sections similarly */}
-      </main>
-      <footer className={classes.footer}>
-        <Typography variant="body1">
-          Contact us today to learn more about our services and how we can help
-          you achieve success in the short-term rental market.
-        </Typography>
-      </footer>
+        </CardContent>
+      </Card>
+
+      <Card className={classes.card}>
+        <CardContent>
+          <Typography className={classes.title}>
+            Property Management and Hosting
+          </Typography>
+          <Typography className={classes.price}>
+            20% commission on bookings
+          </Typography>
+          <Typography className={classes.description}>
+            Running an Airbnb property demands constant attention and effort.
+            Let us handle the day-to-day responsibilities, including guest
+            communications, cleaning, maintenance, and listing updates. Our
+            experienced managers will alleviate your stress while ensuring your
+            property performs at its best.
+          </Typography>
+        </CardContent>
+      </Card>
+
+      <div className={classes.card}>
+        <CardContent>
+          <Typography className={classes.contactInfo}>
+            Contact Us:
+            <div>Phone: 0718627917</div>
+            <div>Email: your@emailaddress.com</div>
+          </Typography>
+        </CardContent>
+      </div>
     </div>
   );
 };
 
-export default Services;
+export default AirbnbConsultingServices;
